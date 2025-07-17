@@ -16,7 +16,7 @@ main {
     margin: 0 auto;
 }
 
-main>section {
+main> section {
     margin-top: 120px;
 }
 
@@ -138,10 +138,12 @@ main>section {
 .facts-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    gap: 124px;
 }
 
 .fact-description {
     max-width: 540px;
+    margin-bottom: 50px;
 }
 
 .fact-card {
@@ -167,10 +169,11 @@ main>section {
     margin-top: 10px;
 }
 
-
-
 /* resonsive style  */
 @media screen and (max-width:576px) {
+    .mobile-text-center{
+        text-align: center;
+    }
 
     .navbar,
     .nav-links,
@@ -179,8 +182,12 @@ main>section {
 
     }
 
-    .team-img-container {
+    .team-img-container, .facts-container {
         grid-template-columns: repeat(1, 1fr);
+    }
+    .facts-container{
+        justify-items: center;
+        gap: 24px;
     }
 
     .our-features {
@@ -191,6 +198,9 @@ main>section {
 
 /* for medium device */
 @media screen and (min-width: 576px) and (max-width: 992px) {
+    .tab-text-center{
+        text-align: center;
+    }
     .teams {
         flex-direction: column;
     }

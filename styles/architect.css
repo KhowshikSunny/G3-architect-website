@@ -16,7 +16,7 @@ main {
     margin: 0 auto;
 }
 
-main> section {
+main>section {
     margin-top: 120px;
 }
 
@@ -116,13 +116,11 @@ main> section {
     gap: 24px;
 
 }
-
+/* feature style  */
 .our-features {
     max-width: 530px;
     margin-left: 130px;
 }
-
-
 
 #quick-list {
     font-weight: 500;
@@ -132,6 +130,28 @@ main> section {
     font-size: 1rem;
     line-height: 26px;
     margin-bottom: 32px;
+}
+.features{
+    gap: 140px;
+}
+
+#feature-section-title {
+    border-left: 5px solid #FF900E;
+    padding-left: 20px;
+}
+
+.feature-card .feature-title {
+    font-weight: 600;
+    font-size: 1.25rem;
+    margin-top: 0px;
+    margin-bottom: 0px;
+
+}
+
+.feature-card {
+    padding: 30px;
+    box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.06);
+    border-radius: 8px;
 }
 
 /* Some Facts */
@@ -169,9 +189,26 @@ main> section {
     margin-top: 10px;
 }
 
+/* sponsor style  */
+.sponsor-info {
+    max-width: 540px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+.sponsor-companis {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+
+}
+
+.sponsor-companis img {
+    filter: grayscale(100%);
+}
+
 /* resonsive style  */
 @media screen and (max-width:576px) {
-    .mobile-text-center{
+    .mobile-text-center {
         text-align: center;
     }
 
@@ -182,10 +219,14 @@ main> section {
 
     }
 
-    .team-img-container, .facts-container {
+    .team-img-container,
+    .facts-container,
+    .sponsor-companis {
         grid-template-columns: 1fr
     }
-    .facts-container{
+
+    .facts-container,
+    .sponsor-companis {
         justify-items: center;
         gap: 24px;
     }
@@ -198,9 +239,10 @@ main> section {
 
 /* for medium device */
 @media screen and (min-width: 576px) and (max-width: 992px) {
-    .tab-text-center{
+    .tab-text-center {
         text-align: center;
     }
+
     .teams {
         flex-direction: column;
     }
@@ -208,13 +250,18 @@ main> section {
     .our-features {
         margin: 50px auto;
     }
-    .facts-container {
+
+    .facts-container,
+    .sponsor-companis {
         grid-template-columns: repeat(2, 1fr);
         margin-left: 100px;
+        gap: 20px;
     }
-    .fact-description{
+
+    .fact-description {
         margin: 0 auto;
         margin-bottom: 30px;
     }
+
 
 }
